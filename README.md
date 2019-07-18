@@ -10,6 +10,6 @@
 
 ### Contact Us:
 
-Website: [https://www.mercury.okstate.edu]
+Website: [https://mercury.okstate.edu]
 
 Email: [okstate.mercury.robotics@gmail.com]
