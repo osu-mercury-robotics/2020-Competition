@@ -1,0 +1,40 @@
+\section{The Robot}
+\subsection{General Robot Requirements}
+All work on the robot shall be completed by \textbf{8:30 AM \competition}, at which time all competing robots are to be turned off and put on display. Minor adjustments, such as the tightening of screws or the replacement of components that have fallen off, are permissible only during a team’s fifteen minute run time.
+
+\subsection{Safety}
+We strongly encourage all teams to consider the safety of their fellow participants, the public and the venue when designing their robot. We reserve the right to disqualify any team whose robot is considered to fall short of safety standards. Consider the following:
+
+\begin{itemize}
+\item Batteries: You may use NiCad, NiMH, SLA batteries or other "safe" batteries. Li-ion batteries may be used only if the team can demonstrate that proper charging and low cut-off systems have been implemented.
+\item Rocket motors, Medieval flails, Nuclear devices (that includes both fusion and fission) and any components that have a tendency to combust, explode, or jump-start the apocalypse are strictly prohibited.
+\end{itemize}
+
+\subsection{Communications}
+The Competition provides an 802.11b/g/n Wi-Fi network on the venue. All communications between the driver and the robot must use this network. The driver must establish a two-way communication with the robot. At the very least, the robot must send a heartbeat signal back to the driver.
+
+The following are the details of the wireless network and regulations of its use during the competition:
+
+\begin{enumerate}
+\item The Competition Wi-Fi network will have the ESSID “MERCURY” and \textit{no security protection}. This ESSID will not be broadcast. Please ensure that your system can connect to a Wi-Fi network without the ESSID broadcast.
+\item The Wi-Fi router providing this network will have a public IP address that will be disclosed to the team on the day of the Competition.
+\item Each team is allowed to have at most \textbf{three} networked hosts using the Wi-Fi network. For example, an IP camera and a Wi-Fi device will count as two hosts. A Wi-Fi device with a non-IP camera attached only counts as one host (for example, a smartphone providing video feed will only count as one host, but it must use the Wi-Fi network).
+\item The team will have to provide information about their networked devices on the online registration form. The team may change this information on the form any number of times up until \textbf{\network}. This information includes a brief description of each device, the MAC addresses, and the ports each device will use if an inbound connection is required.
+\item The networked devices will have to use DHCP to obtain an IP address. Static IP addresses are not allowed and will result in the team's disqualification if used. IP addresses are assigned based on the MAC addresses of the networked devices provided by the team on the registration form.
+\item If the team requires an inbound connection to a networked device, the team is allowed to have at most three forwarded ports. The information provided on the registration form will be used and the team will be notified of the external ports assigned to the team a week before the competition.
+\item During a team's run, only that team's robot and its associated devices will have access to the Wi-Fi network. \textbf{\textit{All other robots and devices that access the Competition router must be completely turned off.}} Failure to do so will result in the team being issued a warning, a penalty or disqualified.
+\item A base station to provide non-Wi-Fi wireless link between the robot and the official router is allowed to be used on-site. This wireless link must not use the 802.11 standard. The base station must use the competition Wi-Fi network to gain Internet access and the base station will count towards the three maximum networked devices.
+\item Independent Wi-Fi repeaters, bridges, ad-hoc Wi-Fi networks, and access points are not allowed. The only 802.11b/g network each device may use is the official wireless network.
+\end{enumerate}
+
+\subsubsection{Loss-of-Signal Test}
+\label{los}
+The team must pass a “Loss-of-Signal” (LOS) test to be eligible as the Competition champion. Teams will have two opportunities to demonstrate LOS handling: \textbf{\los} during the evening Practice period and during regular testing the morning of \textbf{\competition}.
+
+The test will be performed as follows:
+
+\begin{enumerate}
+\item The team clearly demonstrates that the driver can control the robot,
+\item The official router technician will then shut down the router and the robot must be able to clearly indicate that it is now experiencing a loss-of-signal situation and stop,
+\item After the official router is restarted, the team must be able to demonstrate that the driver can re-establish connection to the robot without the team personnel manipulating the robot. The robot must show that connection is re-established by turning off the Loss-of-Signal indicator, and resume normal operation as in point 1.
+\end{enumerate}

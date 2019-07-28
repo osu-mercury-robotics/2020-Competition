@@ -1,0 +1,152 @@
+\section{The Game}
+The order in which robots take the track will be determined by lottery and may be reordered at the discretion of the event organizers. 
+%The day will start with an organized practice run where teams will also be called upon to demonstrate their Loss-of-Signal handling (see section~\ref{los}). Due to a large number of teams that will need to practice each team will be restricted to a maximum of two members on the track during the practice runs.
+
+\subsection{Objective}
+The Objective of the Game this year is the controlled retrieval, transport and launch of the Payload to the Target. \iffalse During a run the Payload must be under the control of the robot at all times during its journey to the Launch. \fi Teams score points based on their robot’s performance in carrying out the Objective and navigating the Field.
+
+\subsubsection{The Payload}
+The Competition Payload will be a ping-pong ball that is approved for use in International Table Tennis Federation (ITTF) sanctioned tournaments and one that appears on the list of \href{https://www.ittf.com/equipment/}{ITTF Approved and Authorized Equipment}. This criteria will allow teams from different regions to obtain similar results during practice and at the Competition. If a team cannot obtain an ITTF approved ball for practice, then one that is \SI{40}{\milli\metre} in diameter and that has a mass of \SI{2.7}{\gram} that is made of either plastic or celluloid is acceptable \footnote{See Technical Bulletin T3 at \url{https://www.ittf.com/equipment} for acceptance testing details.}. The official Payload for use in the Competition will be provided by the event organizers at the venue. Teams will be allowed place the Payload at the location of their choice within the Pickup Zone prior to each run.
+
+\subsection{Run Times}
+Each team will be allowed a maximum of 15 minutes of operating time during the competition. The 15 minutes is divided into two sections; 5 minutes for setup and 10 minutes to run the track. The setup time ends when the robot begins operating. If the team uses more than 5 minutes for setup, it will cut into the 10 minutes of run time. 
+
+The teams may attempt up to 3 runs within 10 minute time window. At any time during the 10 minute run time, a team may choose to terminate the run and restart the Track. A team may not restart after starting its third and final run. When the final run is started, it must be completed before the 10 minute window expires. A run in progress will be terminated at the 10 minute mark, and the score for that run recorded at that time.
+
+If a robot cannot complete the track in the allotted time, or if it runs out of time during a run, then “Did Not Finish” (DNF) is recorded along with the score for that run. A DNF score cannot be considered for the purpose of selecting a champion. Additionally, robots that obtain DNF scores will be ranked among themselves in a second, lower category.
+
+If a robot is unable to start a run during the 15 minute operating period, it is recorded as “Did Not Start” (DNS).
+
+In the event that the site communication link fails, the clock may be stopped or reset at the judges’ discretion.
+\subsection{Scoring}
+For the score of a particular run to be considered valid for the purpose of selecting a Champion, the robot must perform a complete run of the track.
+
+The score for each run is calculated using the following formula:
+
+\[Score = (P + (60-T) + B + (50 - C) + L) \cdot (2 - t_{sprint} / 50) - (5W + 10R) \]
+
+\ctable[caption=Scoring Variables, pos=h, label=tab:score] % options key=value,...
+	{clll} % coldefs for \begin{tabular}
+	{} % zero or more \tnote commands
+	{ % table rows for the table
+	\FL
+		 				&						&   Values						& Notes
+	\ML
+		$P $ 			&	Payload Capture 		&	0,50 						& 50 if retrieval successful, else 0 \\
+		$C $				& 	Payload Control		& 	0,10,20,30,40,50				& Increments with each time robot loses control of the Payload \\
+		$T $				&	Tunnel 				&	0,15,30,45,60					& Increments with each impact\\  
+		$B $				& 	Bridge 				& 	0,50,75						& 75 if crossing with payload, 50 points without, else 0 \\
+		$L $				& 	Launch 				& 	0,10,30,40,50					& Best of three tries\\
+		$t_{sprint}$		&	Sprint Time 	 		&	$0 \leq t_{sprint} \leq 50$  	& Time in seconds to complete sprint \\
+		$W $				&  Contact Penalty			&	$0 \leq W$		 			& Number of times the robot touches a wall \\
+		$R $				& 	Reset Penalty 		&	$0 \leq R$					& Number of times the Handler resets/touches robot
+	\LL
+	}
+	
+\subsubsection{Payload Retrieval}
+The Payload Retrieval is considered successful if the robot is able to retrieve the Payload from the Pickup Zone unaided by the Handler. $P$ is assigned fifty points for a successful pickup. Otherwise no points are awarded. A Reset Penalty is assessed any time the Handler places the Payload in the robot’s delivery device. 
+
+\subsubsection{Payload Control}
+The variable $C$ increments by ten points each time the Payload is not in contact with the floor or the robot loses control of the Payload within the Payload Control Zone. The robot is said to lose Control of the Payload any time it has to interrupt its journey within the Payload Control Zone in order to chase down, recapture or otherwise regain control of the Payload. The hatched area in the figure~\ref{fig:control_zone} denotes the Payload Control Zone. Outside of the Payload Control Zone it is not mandatory that the Payload be in contact with the floor while being transported to the Launch Zone.
+
+
+\begin{figure}[H]
+	\centering
+%	\includegraphics[scale=.3]{images/control_zone.jpg}
+	\caption{Payload Control Zone}
+	\label{fig:control_zone} 
+\end{figure}
+
+\subsubsection{Tunnel}
+The variable $T$ is initially zero and increments by fifteen points for each of the first two times the robot makes contact with the Tunnel. Further impacts with the Tunnel do not result in $T$ increasing beyond 30, and do not count as Contact Penalties.
+
+\subsubsection{Bridge}
+If the robot is able to cross the Bridge unaided with the Payload and without falling off, $B$ is assigned seventy five points. Without the Payload fifty points are awarded. In all other cases, no points are awarded. The team can choose to take a Reset Penalty and reattempt the crossing for the full seventy five points should the robot fall off while crossing.
+
+\subsubsection{Launch}
+$L$ is assigned thirty, forty or fifty points depending on which of the Target’s openings the Payload is thrown into. Ten points are awarded if the Payload falls within the hatched area in figure~\ref{fig:10pts_zone}. Zero points are awarded if the Payload falls anywhere else.
+
+\begin{figure}[H]
+	\centering
+%	\includegraphics[scale=.5]{images/target.jpg}
+	\caption{Target Point Values}
+	\label{fig:target} 
+\end{figure}
+
+\begin{figure}[H]
+	\centering
+%	\includegraphics[scale=.5]{images/10pts_zone.jpg}
+	\caption{Ten Point Area}
+	\label{fig:10pts_zone} 
+\end{figure}
+
+\subsubsection{Sprint}
+Any time the robot has not completed the Sprint, or the time taken to complete the sprint is greater than fifty seconds, $t_{sprint}$ is assigned a value of 50. 
+
+\subsection{Penalties}
+\begin{itemize}
+\item \textbf{Robot Reset} – If the Robot Handler has to touch the robot during the run it will result in a score penalty of 10 points and the robot will be put where it left the track or anywhere prior to that point. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
+\item \textbf{Excessive Communication} – If the judge rules that any team member at the competition site is providing directions to the Operator during a run, the team may be issued a warning, penalty or be disqualified depending on the extent of the infraction. The only communications recommended between the Operator and the Robot Handler are “Start when ready” and “Terminate this run?” 
+\item \textbf{Touching track boundaries} – If the robot comes into contact with the track walls or crosses over the area above marked track boundaries a penalty of 5 points will be deducted from the final score. The penalty will be assessed each time the robot comes into contact with the boundaries. Extended contact can be assessed multiple penalties if it lasts longer than three seconds and the robot remains in motion. For example, a robot that stops while touching the boundary will only receive one penalty while one that drives while touching the wall might receive a series of penalties at the judge’s discretion.
+\item \textbf{Bypassing an Obstacle}
+\label{bypass}
+To bypass an Obstacle the Robot Handler may pick up the robot at that Obstacle’s entry point and place the robot just after the exit point for a Reset Penalty.
+\end{itemize}
+
+%\subsection{Scoring Examples}
+
+%Robot 1 performs it’s final run flawlessly; it incurs no penalties, scores maximum points for the Delivery, and executes the Sprint in 10 seconds.
+%
+%\ctable[caption=Total Score for Robot 1, pos=h, label=tab:ex1] % options key=value,...
+%	{ccccccccccc} % coldefs for \begin{tabular}
+%	{} % zero or more \tnote commands
+%	{ % table rows for the table
+%	\FL
+%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& 	DNF
+%	\ML
+%	221     	&	30	& 	0	&	 30	& 	0 	& 25 	& 2 		& 10 			& 0 		& 0 	& 	False
+%	\LL
+%	}
+%
+%\newpage	
+%Robot 2 successfully performs the Pickup, but scores no points in the Tunnel due to impacts. It is able to cross the Bridge on the third attempt; the first two attempts resulted in Robot Resets. Robot 2 is able to score Maximum points for the Delivery and sustains one contact penalty while negotiating the Slalom. The time allotted for Robot 2 runs out during the Sprint.
+%
+%\ctable[caption=Total Score for Robot 2, pos=h, label=tab:ex2] % options key=value,...
+%	{ccccccccccc} % coldefs for \begin{tabular}
+%	{} % zero or more \tnote commands
+%	{ % table rows for the table
+%	\FL
+%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& DNF
+%	\ML
+%	105     	&	30	& 	30	&	 30	& 	10 	& 25 	& 2 		& 50				& 1 		& 2 	& True
+%	\LL
+%	}
+%
+%Robot 3 is able to successfully perform the Pickup, but incurs a Contact Penalty while passing under the Bridge. It contacts the inside of the Tunnel once and is able to cross the Bridge on the first attempt. While getting into position to Deliver the Payload it makes two additional wall contacts. The robot places the circular Payload in the Delivery Zone. With less than a minute left, the team opts to take a Reset Penalty to bypass the Slalom. The Sprint is completed in 5 seconds.
+%
+%\ctable[caption=Total Score for Robot 3, pos=h, label=tab:ex3] % options key=value,...
+%	{ccccccccccc} % coldefs for \begin{tabular}
+%	{} % zero or more \tnote commands
+%	{ % table rows for the table
+%	\FL
+%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& DNF
+%	\ML
+%	95.375  	&	30	& 	15	&	 30 	& 	30 	& 15 	& 1		& 5				& 3 		& 1 	& False
+%	\LL
+%	}
+	
+%\subsubsection{Ranking Example}
+%
+%\ctable[caption= Example Ranking, pos=h, label=tab:rank] % options key=value,...
+%	{lcr} % coldefs for \begin{tabular}
+%	{} % zero or more \tnote commands
+%	{ % table rows for the table
+%	\FL
+%	Rank			&		Robot Name 	&  	Score
+%	\ML
+%	Champion		&		Robot 1		&	221 \\
+%	Second		&		Robot 3 		& 	95.375
+%	\ML
+%	Third		&		Robot 2		&	105
+%	\LL
+%	}
