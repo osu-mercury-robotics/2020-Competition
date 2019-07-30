@@ -5,9 +5,6 @@ The order in which robots take the track will be determined by lottery and may b
 \subsection{Objective}
 The Objective of the Game this year is the controlled retrieval, transport and launch of the Payload to the Target. \iffalse During a run the Payload must be under the control of the robot at all times during its journey to the Launch. \fi Teams score points based on their robot’s performance in carrying out the Objective and navigating the Field.
 
-\subsubsection{The Payload}
-The Competition Payload will be a ping-pong ball that is approved for use in International Table Tennis Federation (ITTF) sanctioned tournaments and one that appears on the list of \href{https://www.ittf.com/equipment/}{ITTF Approved and Authorized Equipment}. This criteria will allow teams from different regions to obtain similar results during practice and at the Competition. If a team cannot obtain an ITTF approved ball for practice, then one that is \SI{40}{\milli\metre} in diameter and that has a mass of \SI{2.7}{\gram} that is made of either plastic or celluloid is acceptable \footnote{See Technical Bulletin T3 at \url{https://www.ittf.com/equipment} for acceptance testing details.}. The official Payload for use in the Competition will be provided by the event organizers at the venue. Teams will be allowed place the Payload at the location of their choice within the Pickup Zone prior to each run.
-
 \subsection{Run Times}
 Each team will be allowed a maximum of 15 minutes of operating time during the competition. The 15 minutes is divided into two sections; 5 minutes for setup and 10 minutes to run the track. The setup time ends when the robot begins operating. If the team uses more than 5 minutes for setup, it will cut into the 10 minutes of run time. 
 
@@ -23,32 +20,32 @@ For the score of a particular run to be considered valid for the purpose of sele
 
 The score for each run is calculated using the following formula:
 
-\[Score = (P + (60-T) + B + (50 - C) + L) \cdot (2 - t_{sprint} / 50) - (5W + 10R) \]
+\[Score = (S_1 + S_2 + S_3 + S_4(1 - \frac{C}{5})) + (T_b - T_b\frac{T_{r}}{T_{total}}) - 50R\]
 
 \ctable[caption=Scoring Variables, pos=h, label=tab:score] % options key=value,...
 	{clll} % coldefs for \begin{tabular}
 	{} % zero or more \tnote commands
 	{ % table rows for the table
 	\FL
-		 				&						&   Values						& Notes
+		 				&						&   Values						    & Notes
 	\ML
-		$P $ 			&	Payload Capture 		&	0,50 						& 50 if retrieval successful, else 0 \\
-		$C $				& 	Payload Control		& 	0,10,20,30,40,50				& Increments with each time robot loses control of the Payload \\
-		$T $				&	Tunnel 				&	0,15,30,45,60					& Increments with each impact\\  
-		$B $				& 	Bridge 				& 	0,50,75						& 75 if crossing with payload, 50 points without, else 0 \\
-		$L $				& 	Launch 				& 	0,10,30,40,50					& Best of three tries\\
-		$t_{sprint}$		&	Sprint Time 	 		&	$0 \leq t_{sprint} \leq 50$  	& Time in seconds to complete sprint \\
-		$W $				&  Contact Penalty			&	$0 \leq W$		 			& Number of times the robot touches a wall \\
-		$R $				& 	Reset Penalty 		&	$0 \leq R$					& Number of times the Handler resets/touches robot
+		$S_1 $ 			&	Bridge/Tunnel 		&	0,90,150 						& 150 if crosses bridge, 90 if takes tunnel, else 0 \\
+		$S_2 $			& 	World Manipulation	& 				                    &  \\
+		$S_3 $          &   Rough Terrain       &   0,200                           & 200 if successfully completes, else 0 \\
+		$S_4 $          &   Obstacle Avoidance  &   75,175,300                      & 75 if manual, 175 if autonomous (known) \\
+		                &                       &                                   & \/ 300 if autonomous (unknown) \\
+		$C $			&   Contact Penalty		&	$0 \leq C \leq 5$		 	    & Number of times the robot touches an obstacle \\
+		$W $			& 	Wall Contacts 		& 	$0 \leq W$					    & Number of times the robot touches a wall\\
+		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r}+3W \leq 900$  	& Run Time in seconds, including contact penalties \\
+		$R $			& 	Reset Penalty 		&	$0 \leq R$					    & Number of times the Handler touches robot
 	\LL
 	}
 	
-\subsubsection{Payload Retrieval}
-The Payload Retrieval is considered successful if the robot is able to retrieve the Payload from the Pickup Zone unaided by the Handler. $P$ is assigned fifty points for a successful pickup. Otherwise no points are awarded. A Reset Penalty is assessed any time the Handler places the Payload in the robot’s delivery device. 
+\subsubsection{Section 1 - Bridge/Tunnel}
+If the Robot crosses the Bridge unaided, 150 points are awarded. If the Robot successfully navigates the Tunnel, 90 points are awarded. If the Robot takes the Bypass or is otherwise aided, 0 points are awarded.
+%The variable $T$ is initially zero and increments by fifteen points for each of the first two times the robot makes contact with the Tunnel. Further impacts with the Tunnel do not result in $T$ increasing beyond 30, and do not count as Contact Penalties. 
 
-\subsubsection{Payload Control}
-The variable $C$ increments by ten points each time the Payload is not in contact with the floor or the robot loses control of the Payload within the Payload Control Zone. The robot is said to lose Control of the Payload any time it has to interrupt its journey within the Payload Control Zone in order to chase down, recapture or otherwise regain control of the Payload. The hatched area in the figure~\ref{fig:control_zone} denotes the Payload Control Zone. Outside of the Payload Control Zone it is not mandatory that the Payload be in contact with the floor while being transported to the Launch Zone.
-
+\subsubsection{Section 2 - World Manipulation}
 
 \begin{figure}[H]
 	\centering
@@ -57,8 +54,8 @@ The variable $C$ increments by ten points each time the Payload is not in contac
 	\label{fig:control_zone} 
 \end{figure}
 
-\subsubsection{Tunnel}
-The variable $T$ is initially zero and increments by fifteen points for each of the first two times the robot makes contact with the Tunnel. Further impacts with the Tunnel do not result in $T$ increasing beyond 30, and do not count as Contact Penalties.
+\subsubsection{Section 3 - Rough Terrain}
+If the Robot navigates the section, 200 points are awarded. If the Bypass is taken, 0 points are awarded.
 
 \subsubsection{Bridge}
 If the robot is able to cross the Bridge unaided with the Payload and without falling off, $B$ is assigned seventy five points. Without the Payload fifty points are awarded. In all other cases, no points are awarded. The team can choose to take a Reset Penalty and reattempt the crossing for the full seventy five points should the robot fall off while crossing.
