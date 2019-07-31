@@ -2,23 +2,22 @@
 \contentsline {section}{\numberline {1}Competition Overview}{1}{section.1}
 \contentsline {section}{\numberline {2}Field}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Track}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Pickup Zone}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Obstacles}{2}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}Tunnel}{2}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}Bridge}{2}{subsubsection.2.3.2}
-\contentsline {subsection}{\numberline {2.4}Launch Zone}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Target}{3}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Sprint}{3}{subsection.2.6}
+\contentsline {subsection}{\numberline {2.2}Bypasses}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Rough Terrain}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Tunnel}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Bridge}{3}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Object Identification and Handling}{3}{subsection.2.6}
+\contentsline {subsubsection}{\numberline {2.6.1}Pick-up zone}{3}{subsubsection.2.6.1}
+\contentsline {subsection}{\numberline {2.7}Obstacle Avoidance}{3}{subsection.2.7}
 \contentsline {section}{\numberline {3}The Game}{4}{section.3}
 \contentsline {subsection}{\numberline {3.1}Objective}{4}{subsection.3.1}
-\contentsline {subsubsection}{\numberline {3.1.1}The Payload}{4}{subsubsection.3.1.1}
 \contentsline {subsection}{\numberline {3.2}Run Times}{4}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Scoring}{5}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Payload Retrieval}{5}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Payload Control}{5}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Tunnel}{5}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Bridge}{6}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Launch}{6}{subsubsection.3.3.5}
+\contentsline {subsection}{\numberline {3.3}Scoring}{4}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}Section 1 - Bridge/Tunnel}{5}{subsubsection.3.3.1}
+\contentsline {subsubsection}{\numberline {3.3.2}Section 2 - World Manipulation}{5}{subsubsection.3.3.2}
+\contentsline {subsubsection}{\numberline {3.3.3}Section 3 - Rough Terrain}{5}{subsubsection.3.3.3}
+\contentsline {subsubsection}{\numberline {3.3.4}Bridge}{5}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.5}Launch}{5}{subsubsection.3.3.5}
 \contentsline {subsubsection}{\numberline {3.3.6}Sprint}{6}{subsubsection.3.3.6}
 \contentsline {subsection}{\numberline {3.4}Penalties}{6}{subsection.3.4}
 \contentsline {section}{\numberline {4}The Robot}{7}{section.4}
