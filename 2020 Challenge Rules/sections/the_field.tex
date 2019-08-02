@@ -1,5 +1,5 @@
 \section{Field}
-The Field consists of several components; the Track, Pickup and Launch zones, three Obstacles, the Target and the Sprint. A general description of each component follows below. Models and dimensioned drawings of each of the Field’s components can be found in the {\href{https://mercury.okstate.edu/content/mercury-challenge}{2019 Track Pack}}.
+The Field consists of several components; the Track, Bypasses, two Obstacles, the Object Identification and Handling Section, Rough Terrain Section, and Obstacle Avoidance Section. A general description of each component follows below. Models and dimensioned drawings of each of the Field’s components can be found in the {\href{https://mercury.okstate.edu/content/mercury-challenge}{2019 Track Pack}}.
 
 \begin{figure}[H]
 	\centering
@@ -9,10 +9,10 @@ The Field consists of several components; the Track, Pickup and Launch zones, th
 \end{figure}
 
 \subsection{Track}
-The Track is defined as a 24 inch wide path that is bounded on either side by 3 inch high walls. The walls used at the Competition will be constructed from foam board of the type that is easily obtainable from craft stores; 1/8 inch thick with a matte, white paper surface. The track floor will be terazzo.
+The Track is defined as a 24 inch wide path that is bounded on either side by 3 inch high walls. The walls used at the Competition will be constructed from foam board of the type that is easily obtainable from craft stores; 1/8 inch thick with a matte, white paper surface. The track floor will be terrazzo.
 
 \subsection{Bypasses}
-The 2020 Competition Track does include paths that bypass most Obstacles. Teams may choose to bypass any or all of the Obstacles during a run. See section \ref{bypass} for details.
+The 2020 Competition Track includes paths that bypass most Obstacles. Teams may choose to bypass any or all of the Obstacles during a run. See section \ref{bypass} for details.
 
 \subsection{Rough Terrain}
 The Rough Terrain section is a 3 feet wide by 5 feet long area covered with an array of domes aligned in a diagonal grid pattern. The domes are 3D printed plastic with a base diameter of 2 inches and a height of 1/2 inch. There will be walls on the long edges of the section, with bypass paths extending another 24 inches beyond the section walls. This Obstacles tests the durability and agility of the robot.
@@ -24,11 +24,13 @@ The Tunnel is an L-shaped wooden structure with openings on either end that are 
 The Bridge is 24 inches wide with a smooth wooden surface and no guard walls. The climb is 30 degrees with 12 inch rise, followed by a 24 inch span and a 30 degree descent. This Obstacle tests the robot’s ability to move in a controlled manner on an inclined surface.
 
 \subsection{Object Identification and Handling}
-	\subsubsection{Pick-up zone}
-		There are four objects in the pick-up zone. Each of them contains an elctromagnetic coil and will be generat
+	\subsubsection{Pick-Up Zone}
+		There will be four \textbf{bright red} cubes with side lengths of \textbf{2 inches} in the pick-up zone. Each contains an electromagnetic coil and will be generating a square wave at a unique frequency between 1 Hz and 250 Hz. The Robot must detect which Object is emitting the field pulsing at 10 Hz. Once detected, the Robot is tasked with securing the cube and transferring it to the drop-off zone.
+	\subsubsection{Drop-Off Zone}
+		There will be \textbf{two} bins at the drop-off zone. The bins will be dimensioned as \textbf{4 inches wide by 4 inches deep by 2 inches tall}. They will not have a front facing side. One bin will be \textbf{bright yellow} and the other \textbf{dark blue}. They will be spaced evenly in the zone, however their ordering will be randomized the day of the competition. The Robot is tasked with placing its cube in the \textbf{bright yellow} bin.
 
 \subsection{Obstacle Avoidance}
-The Obstacle Avoidance section is defined as a 6 feet wide by 8 feet long rectangular area. The Robot must navigate from the start to the finish without contacting walls or obstacles. Obstacles will be 2 inches deep by 4 inches high and of varied length. They will be \textbf{bright orange}. There will be at least one path with a minimum of 24 inches between obstacles. This section will be offered in 3 versions of varying autonomy.
+The Obstacle Avoidance section is defined as a 6 feet wide by 8 feet long rectangular area. The Robot must navigate from the start to the finish without contacting walls or obstacles. Obstacles will be 2 inches deep by 4 inches high and of varied length. They will be \textbf{bright orange}. There will be at least one path with a minimum of 24 inches between obstacles. This section will be offered in 3 versions of varying autonomy. When registering for the Competition, teams will be required to specify which version of the section they wish to attempt. This selection is to gauge interest in the Autonomy component of the section and may be changed up until the day of the competition. 
 
 \begin{itemize}
     \item Manual - Known Placement
