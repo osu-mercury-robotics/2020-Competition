@@ -30,7 +30,7 @@ The score for each run is calculated using the following formula:
 		 				&						&   Values						    & Notes
 	\ML
 		$S_1 $ 			&	Bridge/Tunnel 		&	0,90,150 						& 150 if crosses bridge, 90 if takes tunnel, else 0 \\
-		$S_2 $			& 	World Manipulation	& 				                    &  \\
+		$S_2 $			& 	Object ID/Handling	& 	$0 \leq 300$			                    & Dependent on  pick-up/drop-off  \\
 		$S_3 $          &   Rough Terrain       &   0,200                           & 200 if successfully completes, else 0 \\
 		$S_4 $          &   Obstacle Avoidance  &   75,175,300                      & 75 if manual, 175 if autonomous (known) \\
 		                &                       &                                   & \/ 300 if autonomous (unknown) \\
@@ -46,7 +46,7 @@ The score for each run is calculated using the following formula:
 If the Robot crosses the Bridge unaided, 150 points are awarded. If the Robot successfully navigates the Tunnel, 90 points are awarded. If the Robot takes the Bypass or is otherwise aided, 0 points are awarded.
 %The variable $T$ is initially zero and increments by fifteen points for each of the first two times the robot makes contact with the Tunnel. Further impacts with the Tunnel do not result in $T$ increasing beyond 30, and do not count as Contact Penalties. 
 
-\subsubsection{Section 2 - World Manipulation}
+\subsubsection{Section 2 - Object Identification and Handling}
 
 \begin{figure}[H]
 	\centering
@@ -55,7 +55,7 @@ If the Robot crosses the Bridge unaided, 150 points are awarded. If the Robot su
 	\label{fig:control_zone} 
 \end{figure}
 
-Robots that identify and place the \textbf{10 Hz oscillator} in the \textbf{bright yellow} bin will be awarded 300 points. If the 10 Hz oscillator is secured but not placed in the \textbf{bright yellow} bin, 150 points will be awarded. 
+Robots that identify and place the \textbf{10 Hz oscillator} in the \textbf{bright yellow} bin will be awarded 300 points. 200 points are awarded for securing the 10 Hz oscillator. 100 points are awarded for securing any other cube. 100 points are awarded for placing any cube in the yellow bin. 50 points are awarded for placing any cube in the blue bin.
 
 \subsubsection{Section 3 - Rough Terrain}
 If the Robot navigates the section, 200 points are awarded. If the Bypass is taken, 0 points are awarded.
@@ -66,31 +66,14 @@ If the robot is able to cross the Bridge unaided with the Payload and without fa
 \subsubsection{Time Bonus}
 $T_b$ represents the maximum possible time bonus. To qualify for the Time Bonus, the Robot must both finish the Track and use no more than \textbf{two} Bypass routes.
 
-\begin{figure}[H]
-	\centering
-%	\includegraphics[scale=.5]{images/target.jpg}
-	\caption{Target Point Values}
-	\label{fig:target} 
-\end{figure}
-
-\begin{figure}[H]
-	\centering
-%	\includegraphics[scale=.5]{images/10pts_zone.jpg}
-	\caption{Ten Point Area}
-	\label{fig:10pts_zone} 
-\end{figure}
-
-\subsubsection{Sprint}
-Any time the robot has not completed the Sprint, or the time taken to complete the sprint is greater than fifty seconds, $t_{sprint}$ is assigned a value of 50. 
-
 \subsection{Penalties}
 \begin{itemize}
-\item \textbf{Robot Reset} – If the Robot Handler has to touch the robot during the run it will result in a score penalty of 10 points and the robot will be put where it left the track or anywhere prior to that point. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
+\item \textbf{Robot Reset} – If the Robot Handler has to touch the robot during the run it will result in a score penalty of 50 points and the robot will be put where it left the track or anywhere it has previously traveled. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
 \item \textbf{Excessive Communication} – If the judge rules that any team member at the competition site is providing directions to the Operator during a run, the team may be issued a warning, penalty or be disqualified depending on the extent of the infraction. The only communications recommended between the Operator and the Robot Handler are “Start when ready” and “Terminate this run?” 
-\item \textbf{Touching track boundaries} – If the robot comes into contact with the track walls or crosses over the area above marked track boundaries a penalty of 5 points will be deducted from the final score. The penalty will be assessed each time the robot comes into contact with the boundaries. Extended contact can be assessed multiple penalties if it lasts longer than three seconds and the robot remains in motion. For example, a robot that stops while touching the boundary will only receive one penalty while one that drives while touching the wall might receive a series of penalties at the judge’s discretion.
+\item \textbf{Touching track boundaries} – If the robot comes into contact with the track walls or crosses over the area above marked track boundaries a penalty of 3 seconds will be deducted from the remaining run time. The penalty will be assessed each time the robot comes into contact with the boundaries. Extended contact can be assessed multiple penalties if it lasts longer than three seconds and the robot remains in motion. For example, a robot that stops while touching the boundary will only receive one penalty while one that drives while touching the wall might receive a series of penalties at the judge’s discretion.
 \item \textbf{Bypassing an Obstacle}
 \label{bypass}
-To bypass an Obstacle the Robot Handler may pick up the robot at that Obstacle’s entry point and place the robot just after the exit point for a Reset Penalty.
+There are Bypass routes available for most Sections. If a Robot bypasses a Section, the Team will receive no points for that Section. Otherwise, no penalties are accessed. 
 \end{itemize}
 
 %\subsection{Scoring Examples}
