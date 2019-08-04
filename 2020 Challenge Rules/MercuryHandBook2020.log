@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  2 AUG 2019 09:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  3 AUG 2019 21:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1746,18 +1746,18 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 60.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 60.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 60.
 Package rerunfilecheck Info: File `MercuryHandBook2020.out' has not changed.
-(rerunfilecheck)             Checksum: 9C5742F3F1DC0E0AEAB0C0A22C5C85DB;2496.
+(rerunfilecheck)             Checksum: FA552A1E3AD883C736D04C30A5E6318A;2500.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30680 strings out of 492982
- 603604 string characters out of 6134896
- 697022 words of memory out of 5000000
- 33553 multiletter control sequences out of 15000+600000
- 584137 words of font info for 94 fonts, out of 8000000 for 9000
+ 30678 strings out of 492982
+ 603580 string characters out of 6134896
+ 697058 words of memory out of 5000000
+ 33549 multiletter control sequences out of 15000+600000
+ 584238 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,80p,10430b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
@@ -1772,10 +1772,10 @@ are/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmvtt10.pfb>
-Output written on MercuryHandBook2020.pdf (16 pages, 459041 bytes).
+Output written on MercuryHandBook2020.pdf (16 pages, 459205 bytes).
 PDF statistics:
- 379 PDF objects out of 1000 (max. 8388607)
- 342 compressed objects within 4 object streams
+ 378 PDF objects out of 1000 (max. 8388607)
+ 341 compressed objects within 4 object streams
  74 named destinations out of 1000 (max. 500000)
  17738 words of extra memory for PDF output out of 20736 (max. 10000000)
 

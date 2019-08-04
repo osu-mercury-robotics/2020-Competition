@@ -3,16 +3,16 @@ The order in which robots take the track will be determined by lottery and may b
 %The day will start with an organized practice run where teams will also be called upon to demonstrate their Loss-of-Signal handling (see section~\ref{los}). Due to a large number of teams that will need to practice each team will be restricted to a maximum of two members on the track during the practice runs.
 
 \subsection{Objective}
-The Objective of the Game this year is the controlled retrieval, transport and launch of the Payload to the Target. \iffalse During a run the Payload must be under the control of the robot at all times during its journey to the Launch. \fi Teams score points based on their robot’s performance in carrying out the Objective and navigating the Field.
+The Objective of the Game this year is the controlled completion of all Track sections, both autonomously and under Operator control. Teams score points based on their robot’s performance in completing the tasks of each Section and navigating the Field.
 
 \subsection{Run Times}
-Each team will be allowed a maximum of 15 minutes of operating time during the competition. The 15 minutes is divided into two sections; 5 minutes for setup and 10 minutes to run the track. The setup time ends when the robot begins operating. If the team uses more than 5 minutes for setup, it will cut into the 10 minutes of run time. 
+Each team will be allowed a maximum of 20 minutes of operating time during the competition. The 20 minutes is divided into two sections; 5 minutes for setup and 15 minutes to run the track. The setup time ends when the robot begins operating. If the team uses more than 5 minutes for setup, it will cut into the 15 minutes of run time. 
 
-The teams may attempt up to 3 runs within 10 minute time window. At any time during the 10 minute run time, a team may choose to terminate the run and restart the Track. A team may not restart after starting its third and final run. When the final run is started, it must be completed before the 10 minute window expires. A run in progress will be terminated at the 10 minute mark, and the score for that run recorded at that time.
+The teams may attempt up to 3 runs within 15 minute time window. At any time during the 15 minute run time, a team may choose to terminate the run and restart the Track. A team may not restart after starting its third and final run. When the final run is started, it must be completed before the 15 minute window expires. A run in progress will be terminated at the 15 minute mark, and the score for that run recorded at that time.
 
 If a robot cannot complete the track in the allotted time, or if it runs out of time during a run, then “Did Not Finish” (DNF) is recorded along with the score for that run. A DNF score cannot be considered for the purpose of selecting a champion. Additionally, robots that obtain DNF scores will be ranked among themselves in a second, lower category.
 
-If a robot is unable to start a run during the 15 minute operating period, it is recorded as “Did Not Start” (DNS).
+If a robot is unable to start a run during the 20 minute operating period, it is recorded as “Did Not Start” (DNS).
 
 In the event that the site communication link fails, the clock may be stopped or reset at the judges’ discretion.
 \subsection{Scoring}
@@ -20,7 +20,7 @@ For the score of a particular run to be considered valid for the purpose of sele
 
 The score for each run is calculated using the following formula:
 
-\[Score = (S_1 + S_2 + S_3 + S_4(1 - \frac{C}{5})) + (T_b - T_b\frac{T_{r}}{T_{total}}) - 50R\]
+\[Score = (S_1 + S_2 + S_3 + S_4(1 - \frac{C}{5})) + T_b(1 - 1\frac{T_{r}}{T_{total}}) - 50R\]
 
 \ctable[caption=Scoring Variables, pos=h, label=tab:score] % options key=value,...
 	{clll} % coldefs for \begin{tabular}
@@ -37,6 +37,7 @@ The score for each run is calculated using the following formula:
 		$C $			&   Contact Penalty		&	$0 \leq C \leq 5$		 	    & Number of times the robot touches an obstacle \\
 		$W $			& 	Wall Contacts 		& 	$0 \leq W$					    & Number of times the robot touches a wall\\
 		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r}+3W \leq 900$  	& Run Time in seconds, including contact penalties \\
+		$T_{b}$			& Time Bonus			&	300 				& Maximum time bonus \\
 		$R $			& 	Reset Penalty 		&	$0 \leq R$					    & Number of times the Handler touches robot
 	\LL
 	}
@@ -54,14 +55,16 @@ If the Robot crosses the Bridge unaided, 150 points are awarded. If the Robot su
 	\label{fig:control_zone} 
 \end{figure}
 
+Robots that identify and place the \textbf{10 Hz oscillator} in the \textbf{bright yellow} bin will be awarded 300 points. If the 10 Hz oscillator is secured but not placed in the \textbf{bright yellow} bin, 150 points will be awarded. 
+
 \subsubsection{Section 3 - Rough Terrain}
 If the Robot navigates the section, 200 points are awarded. If the Bypass is taken, 0 points are awarded.
 
 \subsubsection{Bridge}
 If the robot is able to cross the Bridge unaided with the Payload and without falling off, $B$ is assigned seventy five points. Without the Payload fifty points are awarded. In all other cases, no points are awarded. The team can choose to take a Reset Penalty and reattempt the crossing for the full seventy five points should the robot fall off while crossing.
 
-\subsubsection{Launch}
-$L$ is assigned thirty, forty or fifty points depending on which of the Target’s openings the Payload is thrown into. Ten points are awarded if the Payload falls within the hatched area in figure~\ref{fig:10pts_zone}. Zero points are awarded if the Payload falls anywhere else.
+\subsubsection{Time Bonus}
+$T_b$ represents the maximum possible time bonus. To qualify for the Time Bonus, the Robot must both finish the Track and use no more than \textbf{two} Bypass routes.
 
 \begin{figure}[H]
 	\centering

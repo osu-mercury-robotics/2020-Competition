@@ -18,7 +18,7 @@
 \contentsline {subsubsection}{\numberline {3.3.2}Section 2 - World Manipulation}{6}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Section 3 - Rough Terrain}{6}{subsubsection.3.3.3}
 \contentsline {subsubsection}{\numberline {3.3.4}Bridge}{6}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Launch}{6}{subsubsection.3.3.5}
+\contentsline {subsubsection}{\numberline {3.3.5}Time Bonus}{6}{subsubsection.3.3.5}
 \contentsline {subsubsection}{\numberline {3.3.6}Sprint}{7}{subsubsection.3.3.6}
 \contentsline {subsection}{\numberline {3.4}Penalties}{7}{subsection.3.4}
 \contentsline {section}{\numberline {4}The Robot}{8}{section.4}
