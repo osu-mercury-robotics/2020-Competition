@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  4 AUG 2019 17:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  6 AUG 2019 19:45
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1691,6 +1691,10 @@ LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 
 
 (./sections/the_game.tex
+Overfull \hbox (11.13031pt too wide) in paragraph at lines 44--44
+ []$[]$ 
+ []
+
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
@@ -1746,7 +1750,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 64.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 64.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 64.
 Package rerunfilecheck Info: File `MercuryHandBook2020.out' has not changed.
-(rerunfilecheck)             Checksum: 2913F800B6EF8F3A31ACD3FECF5120A1;2450.
+(rerunfilecheck)             Checksum: 7E6394CCE8AE0F569DC8C35076D65E41;2474.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
@@ -1754,8 +1758,8 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
  ) 
 Here is how much of TeX's memory you used:
  30675 strings out of 492982
- 603507 string characters out of 6134896
- 697248 words of memory out of 5000000
+ 603509 string characters out of 6134896
+ 698285 words of memory out of 5000000
  33548 multiletter control sequences out of 15000+600000
  584238 words of font info for 95 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -1772,7 +1776,7 @@ are/texmf/fonts/type1/public/lm/lmssbo10.pfb></usr/share/texmf/fonts/type1/publ
 ic/lm/lmssbx10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsso10.pfb></usr/sh
 are/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public
 /lm/lmvtt10.pfb>
-Output written on MercuryHandBook2020.pdf (16 pages, 459205 bytes).
+Output written on MercuryHandBook2020.pdf (16 pages, 458782 bytes).
 PDF statistics:
  370 PDF objects out of 1000 (max. 8388607)
  333 compressed objects within 4 object streams

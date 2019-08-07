@@ -3,12 +3,12 @@
 \contentsline {section}{\numberline {2}Field}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Track}{2}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Bypasses}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Rough Terrain}{2}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Tunnel}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Bridge}{3}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Object Identification and Handling}{3}{subsection.2.6}
-\contentsline {subsubsection}{\numberline {2.6.1}Pick-Up Zone}{3}{subsubsection.2.6.1}
-\contentsline {subsubsection}{\numberline {2.6.2}Drop-Off Zone}{3}{subsubsection.2.6.2}
+\contentsline {subsection}{\numberline {2.3}Tunnel}{2}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Bridge}{3}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Object Identification and Handling}{3}{subsection.2.5}
+\contentsline {subsubsection}{\numberline {2.5.1}Pick-Up Zone}{3}{subsubsection.2.5.1}
+\contentsline {subsubsection}{\numberline {2.5.2}Drop-Off Zone}{3}{subsubsection.2.5.2}
+\contentsline {subsection}{\numberline {2.6}Rough Terrain}{3}{subsection.2.6}
 \contentsline {subsection}{\numberline {2.7}Obstacle Avoidance}{3}{subsection.2.7}
 \contentsline {section}{\numberline {3}The Game}{5}{section.3}
 \contentsline {subsection}{\numberline {3.1}Objective}{5}{subsection.3.1}
@@ -17,7 +17,7 @@
 \contentsline {subsubsection}{\numberline {3.3.1}Section 1 - Bridge/Tunnel}{6}{subsubsection.3.3.1}
 \contentsline {subsubsection}{\numberline {3.3.2}Section 2 - Object Identification and Handling}{6}{subsubsection.3.3.2}
 \contentsline {subsubsection}{\numberline {3.3.3}Section 3 - Rough Terrain}{6}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Bridge}{6}{subsubsection.3.3.4}
+\contentsline {subsubsection}{\numberline {3.3.4}Section 4 - Obstacle Avoidance}{6}{subsubsection.3.3.4}
 \contentsline {subsubsection}{\numberline {3.3.5}Time Bonus}{6}{subsubsection.3.3.5}
 \contentsline {subsection}{\numberline {3.4}Penalties}{7}{subsection.3.4}
 \contentsline {section}{\numberline {4}The Robot}{8}{section.4}
