@@ -1,26 +1,26 @@
 \section{The Game}
-The order in which robots take the track will be determined by lottery and may be reordered at the discretion of the event organizers. 
+The order in which robots go through the track will be determined by lottery and may be reordered at the discretion of the event organizers. 
 %The day will start with an organized practice run where teams will also be called upon to demonstrate their Loss-of-Signal handling (see section~\ref{los}). Due to a large number of teams that will need to practice each team will be restricted to a maximum of two members on the track during the practice runs.
 
 \subsection{Objective}
-The Objective of the Game this year is to navigate the entire Track, which involves a variety of obstacles and a prescribed task, letting the Robot operate both autonomously and under Operator control.
+The objective of the game this year is to navigate the entire track, which involves a variety of obstacles and prescribed tasks, letting the robot operate both autonomously and under operator control.
 
 \subsection{Run Times}
 Each team will be allowed a maximum of 20 minutes of operating time during the competition. The 20 minutes is divided into two sections: 5 minutes for setup and 15 minutes to run the track. The setup time ends when the robot begins operating. If the team uses more than 5 minutes for setup, it will cut into the 15 minutes of run time. 
 
-The teams may attempt up to 3 runs within the 15 minute time window. At any time during the 15 minute run time, a team may choose to terminate the run and restart the Track. A team may not restart after starting its third and final run. When the final run is started, it must be completed before the 15 minute window expires. A run in-progress will be terminated at the 15 minute mark, and the score for that run recorded at that time.
+The teams may attempt up to 3 runs within the 15 minute time window. At any time during the 15 minute run time, a team may choose to terminate the run and restart the track. A team may not restart after starting its third and final run. When the final run is started, it must be completed before the 15 minute window expires. A run in-progress will be terminated at the 15 minute mark, and the score for that run recorded at that time.
 
-If a robot cannot complete the track in the allotted time, or if it runs out of time during a run, then “Did Not Finish” (DNF) is recorded along with the score for that run. A DNF score cannot be considered for the purpose of selecting a champion. Additionally, robots that obtain DNF scores will be ranked among themselves in a second, lower category.
+If a robot cannot complete the track in the allotted time, or if it runs out of time during a run, then “Did Not Finish” (DNF) is recorded along with the score for that run. A DNF score cannot be considered for the purpose of selecting a champion. Additionally, robots that obtain DNF scores will be ranked among themselves in a second, lower category. \CT{A DNF score will \textbf{not} be recorded for bypassing a section unless the robot is otherwise unable to complete the track.}
 
 If a robot is unable to start a run during the 20 minute operating period, it is recorded as “Did Not Start” (DNS).
 
 In the event that the site communication link fails, the clock may be stopped or reset at the judges’ discretion.
 \subsection{Scoring}
-For the score of a particular run to be considered valid for the purpose of selecting a Champion, the robot must perform a complete run of the track.
+For the score of a particular run to be considered valid for the purpose of selecting a champion, the robot must perform a complete run of the track.
 
 The score for each run is calculated using the following formula:
 
-\[Score = (S_1 + S_2 + S_3 + S_4(1 - \frac{C}{5})) + T_b(1 - \frac{T_{r}}{T_{total}}) - 50R\]
+\[Score = (S_1 + S_2 + S_3(1-\frac{C_{S_3}}{5}) + S_4(1 - \frac{C_{S_4}}{5})) + T_b(1 - \frac{T_{r}}{T_{tot}}) - 50R\]
 
 \ctable[caption=Scoring Variables, pos=h, label=tab:score] % options key=value,...
 	{clll} % coldefs for \begin{tabular}
@@ -30,49 +30,55 @@ The score for each run is calculated using the following formula:
 		 				&						&   Values						    & Notes
 	\ML
 		$S_1 $ 			&	Bridge/Tunnel 		&	0,90,150 						& 150 if crosses bridge, 90 if takes tunnel, else 0 \\
-		$S_2 $			& 	Object ID/Handling	& 	$0 \leq 300$			                    & Details below  \\
-		$S_3 $          &   Rough Terrain       &   0,200                           & 200 if successfully completes, else 0 \\
+		$S_2 $			& 	Object ID/Handling	& 	$0,100,200,300$			                    & Details below  \\
+		$S_3 $          &   Rough Terrain       &   200                           & Maximum points for $S_3$ \\
 		$S_4 $          &   Obstacle Avoidance  &   75,175,300                      & 75 if manual, 175 if autonomous (known) \\
 		                &                       &                                   & \/ 300 if autonomous (unknown) \\
-		$C $			&   Contact Penalty		&	$0 \leq C \leq 5$		 	    & Number of times the robot touches an obstacle \\
-		$W $			& 	Wall Contacts 		& 	$0 \leq W$					    & Number of times the robot touches a wall\\
-		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r}+3W \leq 900$  	& Run Time in seconds, including contact penalties \\
-		$T_{total}$	&	Total Time			& 	900				& Total available run time in seconds \\			
+		$C_{S_3}$		&	Contact Penalty in $S_3$	& $0\leq C \leq 5$		& Times the robot touches the inner wall in $S_3$ \\
+		$C_{S_4} $			&   Contact Penalty in $S_4$		&	$0 \leq C \leq 5$		 	    & Times the robot touches an obstacle in $S_4$\\
+		$W $			& 	Wall Contacts 		& 	$0 \leq W$					    & Times the robot touches a wall\\
+		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r}+3W $  	& Run Time in seconds, including contact penalties \\
+		$T_{tot}$	&	Total Time			& 	900				& Total available run time in seconds \\			
 		$T_{b}$			& Time Bonus			&	300 				& Maximum time bonus \\
 		$R $			& 	Reset Penalty 		&	$0 \leq R$					    & Number of times the Handler touches robot
 	\LL
 	}
 	
 \subsubsection{Section 1 - Bridge/Tunnel}
-If the Robot crosses the Bridge unaided, 150 points are awarded. If the Robot successfully navigates the Tunnel, 90 points are awarded. If the Robot takes the Bypass or is otherwise aided, 0 points are awarded.
+If the robot crosses the bridge unaided, 150 points are awarded. If the robot successfully navigates the tunnel, 90 points are awarded. If the robot takes the bypass or is otherwise aided, 0 points are awarded.
 %The variable $T$ is initially zero and increments by fifteen points for each of the first two times the robot makes contact with the Tunnel. Further impacts with the Tunnel do not result in $T$ increasing beyond 30, and do not count as Contact Penalties. 
 
 \subsubsection{Section 2 - Object Identification and Handling}
 
-\begin{figure}[H]
-	\centering
-%	\includegraphics[scale=.3]{images/control_zone.jpg}
-	\caption{Payload Control Zone}
-	\label{fig:control_zone} 
-\end{figure}
-
-Robots that identify and place the \textbf{10 Hz oscillator} in the \textbf{bright yellow} bin will be awarded 300 points. 200 points are awarded for identifying and securing the 10 Hz oscillator. 100 points are awarded for securing any other cube. 100 points are awarded for placing any cube in the yellow bin. 50 points are awarded for placing any cube in the blue bin.
+Robots that identify and place the 10 Hz oscillator in the bright yellow bin will be awarded 300 points. 200 points are awarded for identifying and securing the 10 Hz oscillator. 100 points are awarded for securing any other cube. 100 points are awarded for placing any cube in the yellow bin. Only the first cube to be secured will be scored. 
 
 \subsubsection{Section 3 - Rough Terrain}
-If the Robot navigates the section, 200 points are awarded. If the Bypass is taken, 0 points are awarded.
+A maximum of 200 points are available for completing the rough terrain section. \CT{40 points are deducted for each contact with the inner walls of the section. Extended contacts may be recorded as multiple penalties at the judges' discretion. Completion is defined as the robot navigating from start to finish without more than half of the robot crossing the section boundaries.
+
+$C_{S_3}$ represents the number of times the robot contact the inner walls of the section.
+}
 
 \subsubsection{Section 4 - Obstacle Avoidance}
-\CT{\textbf{FINISH ME}}
+\CT{$S_4$ represents the maximum possible points available for the obstacle avoidance section. These maximums are as follows: 
+
+\begin{itemize}
+\item Manual - 75 points
+\item Autonomous (Known placement of obstacles) - 175 points
+\item Autonomous (Unknown placement of obstacles) - 300 points
+\end{itemize}
+
+$C$ represents the number of times the robot contacts obstacles in the section. Teams will be given \textbf{1} free contact, after which $C$ will increment by one per contact. Extended contacts may incur multiple penalties at the judges' discretion. Note that $C$ is not affected by contacts with course boundaries, which are defined in Section \ref{Wall Contact}.
+}
 
 \subsubsection{Time Bonus}
-$T_b$ represents the maximum possible time bonus. To qualify for the Time Bonus, the Robot must both finish the Track and use no more than \textbf{two} Bypass routes.
+$T_b$ represents the maximum possible time bonus. To qualify for the time bonus, the robot must both finish the track and use no more than \textbf{two} bypass routes.
 
 \subsection{Penalties}
 \begin{itemize}
-\item \textbf{Robot Reset} – If the Robot Handler has to touch the robot during the run it will result in a score penalty of 50 points and the robot will be put where it left the track or anywhere it has previously traveled. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
-\item \textbf{Excessive Communication} – If the judge rules that any team member at the competition site is providing directions to the Operator during a run, the team may be issued a warning, penalty or be disqualified depending on the extent of the infraction. The only communications recommended between the Operator and the Robot Handler are “Start when ready” and “Terminate this run?” 
-\item \textbf{Wall Contact} – If the robot comes into contact with the track walls or crosses over the area above marked track boundaries a penalty of 3 seconds will be added to the Robot's run time. The penalty will be assessed each time the robot comes into contact with the boundaries. Extended contact can be assessed multiple penalties if it lasts longer than three seconds and the robot remains in motion. For example, a robot that stops while touching the boundary will only receive one penalty while one that drives while touching the wall might receive a series of penalties at the judge’s discretion.
-\item \textbf{Bypassing an Obstacle}\label{bypass} -- There are Bypass routes available for most Sections. If a Robot bypasses a Section, the Team will receive no points for that Section. There will be no additional penalties assessed for bypassing the Section. However, the Robot may incur Reset Penalties and/or Wall Contact Penalties during the route.  
+\item \textbf{Robot Reset} – If the robot handler has to touch the robot during the run it will result in a score penalty of 50 points and the robot will be put where it left the track or anywhere it has previously traveled. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
+\item \textbf{Excessive Communication} – If the judge rules that any team member at the competition site is providing directions to the operator during a run, the team may be issued a warning, penalty or be disqualified depending on the extent of the infraction. The only communications recommended between the operator and the robot handler are “Start when ready” and “Terminate this run?” 
+\item  \textbf{Wall Contact}\label{Wall Contact} – If the robot comes into contact with the track walls or crosses over track boundaries a penalty of 3 seconds will be added to the robot's run time. The penalty will be assessed each time the robot comes into contact with the boundaries. Extended contact can be assessed multiple penalties if it lasts longer than three seconds and the robot remains in motion. For example, a robot that stops while touching the boundary will only receive one penalty while one that drives while touching the wall might receive a series of penalties at the judge’s discretion.
+\item \textbf{Bypassing an Obstacle}\label{bypass} -- There are bypass routes available for most sections. If a robot bypasses a section, the team will receive no points for that section. There will be no additional penalties assessed for bypassing the section. However, the robot may incur other penalties during the route.  
 \end{itemize}
 
 %\subsection{Scoring Examples}
