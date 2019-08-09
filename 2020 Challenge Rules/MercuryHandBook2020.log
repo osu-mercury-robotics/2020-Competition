@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  8 AUG 2019 09:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  9 AUG 2019 08:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1753,13 +1753,13 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30680 strings out of 492982
- 603565 string characters out of 6134896
+ 30678 strings out of 492982
+ 603543 string characters out of 6134896
  699319 words of memory out of 5000000
  33548 multiletter control sequences out of 15000+600000
- 584541 words of font info for 98 fonts, out of 8000000 for 9000
+ 584440 words of font info for 97 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 55i,15n,80p,10430b,886s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 55i,15n,80p,10430b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dv
 ips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/share
 /texmf/fonts/enc/dvips/lm/lm-mathsy.enc}</usr/share/texlive/texmf-dist/fonts/ty
@@ -1772,7 +1772,7 @@ e/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmvtt10.pfb>
-Output written on MercuryHandBook2020.pdf (16 pages, 420071 bytes).
+Output written on MercuryHandBook2020.pdf (16 pages, 419813 bytes).
 PDF statistics:
  374 PDF objects out of 1000 (max. 8388607)
  336 compressed objects within 4 object streams
