@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  10 AUG 2019 22:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.7.30)  11 AUG 2019 08:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1677,22 +1677,29 @@ Package pdftex.def Info: images/track_overview_wlabels.png  used on input line
 
 
  <./images/track_overview_wlabels.png>]
-(./images/merc_logo.tex) [3]
-LaTeX Font Info:    Try loading font information for OMS+lmss on input line 36.
+<images/rough_terrain.png, id=232, 1218.5525pt x 715.67375pt>
+File: images/rough_terrain.png Graphic file (type png)
+<use images/rough_terrain.png>
+Package pdftex.def Info: images/rough_terrain.png  used on input line 34.
+(pdftex.def)             Requested size: 399.29463pt x 234.51318pt.
 
-LaTeX Font Info:    No file OMSlmss.fd. on input line 36.
+(./images/merc_logo.tex) [3]
+LaTeX Font Info:    Try loading font information for OMS+lmss on input line 43.
+
+LaTeX Font Info:    No file OMSlmss.fd. on input line 43.
 
 
 LaTeX Font Warning: Font shape `OMS/lmss/m/n' undefined
 (Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbullet' on input line 36.
+(Font)              for symbol `textbullet' on input line 43.
 
-<images/avoidance_overview.png, id=236, 1190.4475pt x 806.01125pt>
+<images/avoidance_overview.png, id=237, 1190.4475pt x 806.01125pt>
 File: images/avoidance_overview.png Graphic file (type png)
 <use images/avoidance_overview.png>
-Package pdftex.def Info: images/avoidance_overview.png  used on input line 50.
-(pdftex.def)             Requested size: 399.29463pt x 270.33827pt.
-) (./images/merc_logo.tex) [4 <./images/avoidance_overview.png>]
+Package pdftex.def Info: images/avoidance_overview.png  used on input line 57.
+(pdftex.def)             Requested size: 446.26582pt x 302.14278pt.
+) (./images/merc_logo.tex) [4 <./images/rough_terrain.png>]
+(./images/merc_logo.tex) [5 <./images/avoidance_overview.png>]
 \openout2 = `sections/the_game.aux'.
 
 
@@ -1700,31 +1707,31 @@ Package pdftex.def Info: images/avoidance_overview.png  used on input line 50.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-(./images/merc_logo.tex) [5
+(./images/merc_logo.tex) [6
 
 
-] (./images/merc_logo.tex) [6])
-(./images/merc_logo.tex) [7]
+] (./images/merc_logo.tex) [7])
+(./images/merc_logo.tex) [8]
 \openout2 = `sections/the_robot.aux'.
 
  (./sections/the_robot.tex
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/m/sl' tried instead on input line 20.
- (./images/merc_logo.tex) [8
+ (./images/merc_logo.tex) [9
 
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/bx/it' in size <10.95> not available
 (Font)              Font shape `T1/lmss/bx/sl' tried instead on input line 26.
-) (./images/merc_logo.tex) [9]
+) (./images/merc_logo.tex) [10]
 \openout2 = `sections/the_tournament.aux'.
 
  (./sections/the_tournament.tex
-(./images/merc_logo.tex) [10
+(./images/merc_logo.tex) [11
 
 
-] (./images/merc_logo.tex) [11])
-(./images/merc_logo.tex) [12]
+] (./images/merc_logo.tex) [12])
+(./images/merc_logo.tex) [13]
 \openout2 = `sections/appendix.aux'.
 
  (./sections/appendix.tex
@@ -1739,7 +1746,7 @@ rcury . okstate . edu$[][] \T1/lmss/m/n/10.95 (-20) or con-tact us via email at
  [][]ok-state.mercury.robotics@gmail.com[][]. 
  []
 
-) (./images/merc_logo.tex) [13
+) (./images/merc_logo.tex) [14
 
 
 ]
@@ -1759,10 +1766,10 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30683 strings out of 492982
- 603708 string characters out of 6134896
- 699419 words of memory out of 5000000
- 33553 multiletter control sequences out of 15000+600000
+ 30693 strings out of 492982
+ 603916 string characters out of 6134896
+ 699533 words of memory out of 5000000
+ 33558 multiletter control sequences out of 15000+600000
  584339 words of font info for 96 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,80p,10430b,884s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1778,10 +1785,10 @@ e/texmf/fonts/type1/public/lm/lmss17.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmssbo10.pfb></usr/share/texmf/fonts/type1/public/lm/lmssbx10.pfb></usr/share
 /texmf/fonts/type1/public/lm/lmsso10.pfb></usr/share/texmf/fonts/type1/public/l
 m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmvtt10.pfb>
-Output written on MercuryHandBook2020.pdf (16 pages, 522014 bytes).
+Output written on MercuryHandBook2020.pdf (17 pages, 644315 bytes).
 PDF statistics:
- 377 PDF objects out of 1000 (max. 8388607)
- 337 compressed objects within 4 object streams
- 72 named destinations out of 1000 (max. 500000)
- 17735 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 386 PDF objects out of 1000 (max. 8388607)
+ 343 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
+ 17740 words of extra memory for PDF output out of 20736 (max. 10000000)
 
