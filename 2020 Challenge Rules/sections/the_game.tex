@@ -20,7 +20,7 @@ For the score of a particular run to be considered valid for the purpose of sele
 
 The score for each run is calculated using the following formula:
 
-\[Score = (S_1 + S_2 + S_3(1-\frac{C_{S_3}}{5}) + S_4(1 - \frac{C_{S_4}}{5})) + T_b(1 - \frac{T_{r}}{T_{tot}}) - 50R\]
+\[Score = (S_1 + S_2 + S_3(1-\frac{C_{S_3}}{5}) + S_4(1 - \frac{C_{S_4}}{5})) + T_b(1 - \frac{T_{r}+3W}{T_{tot}}) - 50R\]
 
 \ctable[caption=Scoring Variables, pos=h, label=tab:score] % options key=value,...
 	{clll} % coldefs for \begin{tabular}
@@ -37,7 +37,7 @@ The score for each run is calculated using the following formula:
 		$C_{S_3}$		&	Contact Penalty in $S_3$	& $0\leq C \leq 5$		& Times the robot touches the inner wall in $S_3$ \\
 		$C_{S_4} $			&   Contact Penalty in $S_4$		&	$0 \leq C \leq 5$		 	    & Times the robot touches an obstacle in $S_4$\\
 		$W $			& 	Wall Contacts 		& 	$0 \leq W$					    & Times the robot touches a wall\\
-		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r}+3W $  	& Run Time in seconds, including contact penalties \\
+		$T_{r}$		    &	Run Time 	 		&	$0 \leq T_{r} \leq T_{tot} $  	& Run Time in seconds, including contact penalties \\
 		$T_{tot}$	&	Total Time			& 	900				& Total available run time in seconds \\			
 		$T_{b}$			& Time Bonus			&	300 				& Maximum time bonus \\
 		$R $			& 	Reset Penalty 		&	$0 \leq R$					    & Number of times the handler touches robot
