@@ -3,7 +3,7 @@
 
 v1.0.1 of the 2020 Competition Handbook has been released.
 
-This GitHub repository tracks any updates in the Handbook as they're being made. Please note that these updates are under development and are not binding for the 2020 Competition. Please refer to the latest [release](https://github.com/osu-mercury-robotics/2020-Competition/releases) or the [2020 Track Pack](https://mercury.okstate.edu/content/mercury-challenge) for the version that will be used in the competition. 
+This GitHub repository tracks any updates in the Handbook as they're being made. Please note that these updates are under development and are not binding for the 2020 Competition. Please refer to the the [2020 Track Pack](https://mercury.okstate.edu/content/mercury-challenge) for the version that will be used in the competition. 
 
 # 2020 Competition Handbook v1.0.1
 
