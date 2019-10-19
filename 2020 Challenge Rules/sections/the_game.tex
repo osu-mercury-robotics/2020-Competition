@@ -72,6 +72,8 @@ $C_{S_4}$ represents the number of times the robot contacts obstacles in the sec
 \subsubsection{Time Bonus}
 $T_b$ represents the maximum possible time bonus. To qualify for the time bonus, the robot must both finish the track and use no more than two bypass routes.
 
+Note that the robot is considered to have bypassed the Object ID Section ($S_2$) if it traverses the section without attempting to complete the assigned task.
+
 \subsection{Penalties}
 \begin{itemize}
 \item \textbf{Robot Reset} – If the robot handler has to touch the robot during the run it will result in a score penalty of 50 points and the robot will be put where it left the track or anywhere it has previously traveled. If any other team member touches the robot during the run, the current run will be disqualified and therefore not scored.
@@ -80,60 +82,3 @@ $T_b$ represents the maximum possible time bonus. To qualify for the time bonus,
 \item \textbf{Bypassing an Obstacle}\label{bypass} -- There are bypass routes available for most sections. If a robot bypasses a section, the team will receive no points for that section. There will be no additional penalties assessed for bypassing the section. However, the robot may incur other penalties during the route.  
 \end{itemize}
 
-%\subsection{Scoring Examples}
-
-%Robot 1 performs it’s final run flawlessly; it incurs no penalties, scores maximum points for the Delivery, and executes the Sprint in 10 seconds.
-%
-%\ctable[caption=Total Score for Robot 1, pos=h, label=tab:ex1] % options key=value,...
-%	{ccccccccccc} % coldefs for \begin{tabular}
-%	{} % zero or more \tnote commands
-%	{ % table rows for the table
-%	\FL
-%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& 	DNF
-%	\ML
-%	221     	&	30	& 	0	&	 30	& 	0 	& 25 	& 2 		& 10 			& 0 		& 0 	& 	False
-%	\LL
-%	}
-%
-%\newpage	
-%Robot 2 successfully performs the Pickup, but scores no points in the Tunnel due to impacts. It is able to cross the Bridge on the third attempt; the first two attempts resulted in Robot Resets. Robot 2 is able to score Maximum points for the Delivery and sustains one contact penalty while negotiating the Slalom. The time allotted for Robot 2 runs out during the Sprint.
-%
-%\ctable[caption=Total Score for Robot 2, pos=h, label=tab:ex2] % options key=value,...
-%	{ccccccccccc} % coldefs for \begin{tabular}
-%	{} % zero or more \tnote commands
-%	{ % table rows for the table
-%	\FL
-%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& DNF
-%	\ML
-%	105     	&	30	& 	30	&	 30	& 	10 	& 25 	& 2 		& 50				& 1 		& 2 	& True
-%	\LL
-%	}
-%
-%Robot 3 is able to successfully perform the Pickup, but incurs a Contact Penalty while passing under the Bridge. It contacts the inside of the Tunnel once and is able to cross the Bridge on the first attempt. While getting into position to Deliver the Payload it makes two additional wall contacts. The robot places the circular Payload in the Delivery Zone. With less than a minute left, the team opts to take a Reset Penalty to bypass the Slalom. The Sprint is completed in 5 seconds.
-%
-%\ctable[caption=Total Score for Robot 3, pos=h, label=tab:ex3] % options key=value,...
-%	{ccccccccccc} % coldefs for \begin{tabular}
-%	{} % zero or more \tnote commands
-%	{ % table rows for the table
-%	\FL
-%	Score	&	P 	& 	T	&	 B   & 	S 	& $D_b$ 	& $D_m$ 	& $t_{sprint}$ 	& W 		& R 	& DNF
-%	\ML
-%	95.375  	&	30	& 	15	&	 30 	& 	30 	& 15 	& 1		& 5				& 3 		& 1 	& False
-%	\LL
-%	}
-	
-%\subsubsection{Ranking Example}
-%
-%\ctable[caption= Example Ranking, pos=h, label=tab:rank] % options key=value,...
-%	{lcr} % coldefs for \begin{tabular}
-%	{} % zero or more \tnote commands
-%	{ % table rows for the table
-%	\FL
-%	Rank			&		Robot Name 	&  	Score
-%	\ML
-%	Champion		&		Robot 1		&	221 \\
-%	Second		&		Robot 3 		& 	95.375
-%	\ML
-%	Third		&		Robot 2		&	105
-%	\LL
-%	}
