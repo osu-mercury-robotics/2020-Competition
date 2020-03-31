@@ -1,39 +1,39 @@
 \babel@toc {english}{}
-\contentsline {section}{\numberline {1}Competition Overview}{1}{section.1}
-\contentsline {section}{\numberline {2}Field}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}Track}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Bypasses}{2}{subsection.2.2}
-\contentsline {subsection}{\numberline {2.3}Tunnel}{3}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Bridge}{3}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Object Identification and Handling}{3}{subsection.2.5}
-\contentsline {subsubsection}{\numberline {2.5.1}Pick-Up Zone}{3}{subsubsection.2.5.1}
-\contentsline {subsubsection}{\numberline {2.5.2}Drop-Off Zone}{3}{subsubsection.2.5.2}
-\contentsline {subsection}{\numberline {2.6}Rough Terrain}{3}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Obstacle Avoidance}{4}{subsection.2.7}
-\contentsline {section}{\numberline {3}The Game}{6}{section.3}
-\contentsline {subsection}{\numberline {3.1}Objective}{6}{subsection.3.1}
-\contentsline {subsection}{\numberline {3.2}Run Times}{6}{subsection.3.2}
-\contentsline {subsection}{\numberline {3.3}Scoring}{6}{subsection.3.3}
-\contentsline {subsubsection}{\numberline {3.3.1}Section 1 - Bridge/Tunnel}{7}{subsubsection.3.3.1}
-\contentsline {subsubsection}{\numberline {3.3.2}Section 2 - Object Identification and Handling}{7}{subsubsection.3.3.2}
-\contentsline {subsubsection}{\numberline {3.3.3}Section 3 - Rough Terrain}{7}{subsubsection.3.3.3}
-\contentsline {subsubsection}{\numberline {3.3.4}Section 4 - Obstacle Avoidance}{7}{subsubsection.3.3.4}
-\contentsline {subsubsection}{\numberline {3.3.5}Time Bonus}{8}{subsubsection.3.3.5}
-\contentsline {subsection}{\numberline {3.4}Penalties}{8}{subsection.3.4}
-\contentsline {section}{\numberline {4}The Robot}{9}{section.4}
-\contentsline {subsection}{\numberline {4.1}General Robot Requirements}{9}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}Safety}{9}{subsection.4.2}
-\contentsline {subsection}{\numberline {4.3}Communications}{9}{subsection.4.3}
-\contentsline {subsubsection}{\numberline {4.3.1}Loss-of-Signal Test}{10}{subsubsection.4.3.1}
-\contentsline {section}{\numberline {5}The Tournament}{11}{section.5}
-\contentsline {subsection}{\numberline {5.1}Registration}{11}{subsection.5.1}
-\contentsline {subsection}{\numberline {5.2}Practice Runs}{11}{subsection.5.2}
-\contentsline {subsection}{\numberline {5.3}Documentation}{11}{subsection.5.3}
-\contentsline {subsubsection}{\numberline {5.3.1}Technical Document}{12}{subsubsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.2}Video Presentation}{12}{subsubsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.3}Robot and Team Picture}{12}{subsubsection.5.3.3}
-\contentsline {subsection}{\numberline {5.4}Judging}{13}{subsection.5.4}
-\contentsline {subsection}{\numberline {5.5}Awards}{13}{subsection.5.5}
-\contentsline {section}{\numberline {6}Appendix}{14}{section.6}
-\contentsline {subsection}{\numberline {6.1}Important Dates}{14}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Contact Information}{14}{subsection.6.2}
+\contentsline {section}{\numberline {1}Competition Overview}{1}{section.1}% 
+\contentsline {section}{\numberline {2}Field}{2}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Track}{2}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Bypasses}{2}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Tunnel}{3}{subsection.2.3}% 
+\contentsline {subsection}{\numberline {2.4}Bridge}{3}{subsection.2.4}% 
+\contentsline {subsection}{\numberline {2.5}Object Identification and Handling}{3}{subsection.2.5}% 
+\contentsline {subsubsection}{\numberline {2.5.1}Pick-Up Zone}{3}{subsubsection.2.5.1}% 
+\contentsline {subsubsection}{\numberline {2.5.2}Drop-Off Zone}{3}{subsubsection.2.5.2}% 
+\contentsline {subsection}{\numberline {2.6}Rough Terrain}{3}{subsection.2.6}% 
+\contentsline {subsection}{\numberline {2.7}Obstacle Avoidance}{4}{subsection.2.7}% 
+\contentsline {section}{\numberline {3}The Game}{6}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Objective}{6}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Run Times}{6}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}Scoring}{6}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Section 1 - Bridge/Tunnel}{6}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Section 2 - Object Identification and Handling}{7}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Section 3 - Rough Terrain}{7}{subsubsection.3.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.4}Section 4 - Obstacle Avoidance}{7}{subsubsection.3.3.4}% 
+\contentsline {subsubsection}{\numberline {3.3.5}Time Bonus}{8}{subsubsection.3.3.5}% 
+\contentsline {subsection}{\numberline {3.4}Penalties}{8}{subsection.3.4}% 
+\contentsline {section}{\numberline {4}The Robot}{9}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}General Robot Requirements}{9}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Safety}{9}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Communications}{9}{subsection.4.3}% 
+\contentsline {subsubsection}{\numberline {4.3.1}Loss-of-Signal Test}{10}{subsubsection.4.3.1}% 
+\contentsline {section}{\numberline {5}The Tournament}{11}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Registration}{11}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Practice Runs}{11}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Documentation}{11}{subsection.5.3}% 
+\contentsline {subsubsection}{\numberline {5.3.1}Technical Document}{11}{subsubsection.5.3.1}% 
+\contentsline {subsubsection}{\numberline {5.3.2}Video Presentation}{12}{subsubsection.5.3.2}% 
+\contentsline {subsubsection}{\numberline {5.3.3}Robot and Team Picture}{12}{subsubsection.5.3.3}% 
+\contentsline {subsection}{\numberline {5.4}Judging}{12}{subsection.5.4}% 
+\contentsline {subsection}{\numberline {5.5}Awards}{13}{subsection.5.5}% 
+\contentsline {section}{\numberline {6}Appendix}{14}{section.6}% 
+\contentsline {subsection}{\numberline {6.1}Important Dates}{14}{subsection.6.1}% 
+\contentsline {subsection}{\numberline {6.2}Contact Information}{14}{subsection.6.2}% 
