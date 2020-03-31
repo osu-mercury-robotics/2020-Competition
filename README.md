@@ -5,6 +5,23 @@ v1.0.1 of the 2020 Competition Handbook has been released.
 
 This GitHub repository tracks any updates in the Handbook as they're being made. Please note that these updates are under development and are not binding for the 2020 Competition. Please refer to the the [2020 Track Pack](https://mercury.okstate.edu/content/mercury-challenge) for the version that will be used in the competition. 
 
+---------------------------------------------------
+
+# COVID-19 Contingency Plan
+
+Due to the COVID-19 pandemic, the 2020 Mercury Remote Robot Challenge has been postponed until August 29, 2020. This was not an easy decision to make and we sincerely regret any difficulties this postponement may cause our participants.
+
+All new deadlines may be found below:
+
+| Event       | Date            |
+|-------------|-----------------|
+| Competition | August 29, 2020 |
+| Practice, Early LOS Testing | August 28, 2020 |
+| Deadline to Update Network Information | August 1, 2020 |
+| Deadline for Document Submission | July 18, 2020 | 
+| Registration Deadline | May 30, 2020 |
+
+----------------------------------------------------
 # 2020 Competition Handbook v1.0.1
 
 The 2020 Competition Handbook includes a few major changes from previous years. Some of them are as follows: 
