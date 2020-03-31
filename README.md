@@ -15,11 +15,14 @@ All new deadlines may be found below:
 
 | Event       | Date            |
 |-------------|-----------------|
-| Competition | August 29, 2020 |
-| Practice, Early LOS Testing | August 28, 2020 |
+| Competition* | August 29, 2020 |
+| Practice, Early LOS Testing* | August 28, 2020 |
 | Deadline to Update Network Information | August 1, 2020 |
 | Deadline for Document Submission | July 18, 2020 | 
 | Registration Deadline | May 30, 2020 |
+
+
+*Contingent upon the resolution of the COVID-19 pandemic
 
 ----------------------------------------------------
 # 2020 Competition Handbook v1.0.1
@@ -36,7 +39,7 @@ As always, we can't wait to see everyone at the 11th annual Mercury Robotics Com
 \
 _OSU Mercury Officers_
 
-----------------------------------------------------------
+----------------------------------------------------------dsd
 
 ### Contact Us:
 
